@@ -2,18 +2,34 @@
 
 public class bet : MonoBehaviour
 {
-    GameObject[] objectsToDestroy;
+    GameObject[] objectsToDestroywhite;
+    GameObject[] objectsToDestroygreen;
+    GameObject[] objectsToDestroyred;
     public betNumber betNumberScript;
 
     void Update(){
-        objectsToDestroy = GameObject.FindGameObjectsWithTag("Waste");
+        objectsToDestroywhite = GameObject.FindGameObjectsWithTag("WhiteBet");
+        objectsToDestroyred = GameObject.FindGameObjectsWithTag("RedBet");
+        objectsToDestroygreen = GameObject.FindGameObjectsWithTag("GreenBet");
     }
 
     void OnCollisionEnter(Collision col)
     {
-        foreach (GameObject objectToDestroy in objectsToDestroy)
+        foreach (GameObject objectToDestroyW in objectsToDestroywhite)
         {
-            Destroy(objectToDestroy);
+            Destroy(objectToDestroyW);
+        }
+        betNumberScript.texto.text = "No Apostado";
+
+         foreach (GameObject objectToDestroyG in objectsToDestroygreen)
+        {
+            Destroy(objectToDestroyG);
+        }
+        betNumberScript.texto.text = "No Apostado";
+
+         foreach (GameObject objectToDestroyR in objectsToDestroyred)
+        {
+            Destroy(objectToDestroyR);
         }
         betNumberScript.texto.text = "No Apostado";
     }
