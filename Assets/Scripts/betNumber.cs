@@ -9,6 +9,11 @@ public class betNumber : MonoBehaviour {
 
     public Text totalMoneyText;
     public Text currentBetText;
+    
+    public GameObject redButton;
+    public GameObject greenButton;
+    public GameObject whiteButton;
+
 
 
     void Start()
@@ -70,16 +75,23 @@ public class betNumber : MonoBehaviour {
             other.gameObject.tag = "RedChip";
         }
     }
-
-	
-	public void PlaceBet(int betAmount)
+    
+    
+    public void PlaceBet(int betAmount)
 	{
 		if (totalMoney >= betAmount)
 		{
 			totalMoney -= betAmount;
 			currentBet += betAmount;
 			UpdateUI();
-			}
+
+            if (totalMoney = 0)
+            {
+                redButton.SetActive(false);
+                greenButton.SetActive(false);
+                whiteButton.SetActive(false);
+            }
+		}
 	}
 
 	private void UpdateUI()
