@@ -31,7 +31,7 @@ namespace Components
 		void FixedUpdate()
 		{
 			wheelRotator.transform.Rotate(Vector2.down * gameRoullete.currentSpeed * Time.deltaTime);
-			ballRotator.transform.Rotate(Vector2.down * gameRoullete.currentSpeed * 3 * Time.deltaTime);  
+			// ballRotator.transform.Rotate(Vector2.down * gameRoullete.currentSpeed * 3 * Time.deltaTime);  
 		}
 	}
 }
