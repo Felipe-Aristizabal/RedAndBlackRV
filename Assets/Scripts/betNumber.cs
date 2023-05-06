@@ -85,7 +85,7 @@ public class betNumber : MonoBehaviour {
 			currentBet += betAmount;
 			UpdateUI();
 
-            if (totalMoney = 0)
+            if (totalMoney == 0)
             {
                 redButton.SetActive(false);
                 greenButton.SetActive(false);
