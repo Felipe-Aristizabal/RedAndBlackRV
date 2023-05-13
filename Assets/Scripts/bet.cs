@@ -1,14 +1,18 @@
 ﻿using UnityEngine;
 
+
 public class bet : MonoBehaviour
 {
+	public RotateAround rotar;
     GameObject[] objectsToDestroywhite;
     GameObject[] objectsToDestroygreen;
     GameObject[] objectsToDestroyred;
     public betNumber betNumberScript;
 
-    void Update(){
-        objectsToDestroywhite = GameObject.FindGameObjectsWithTag("WhiteBet");
+    void Update()
+	{
+		
+		objectsToDestroywhite = GameObject.FindGameObjectsWithTag("WhiteBet");
         objectsToDestroyred = GameObject.FindGameObjectsWithTag("RedBet");
         objectsToDestroygreen = GameObject.FindGameObjectsWithTag("GreenBet");
     }
@@ -33,4 +37,8 @@ public class bet : MonoBehaviour
         }
         betNumberScript.texto.text = "No Apostado";
     }
+
+	public void OnClick() {
+		rotar.shouldRotate = true;
+	}
 }
