@@ -3,12 +3,17 @@ using UnityEngine.UI;
 
 public class betNumber : MonoBehaviour {
 
-    public Text texto;
-    private int totalMoney = 25;
-    public int currentBet = 0;
-
     public Text totalMoneyText;
     public Text currentBetText;
+
+    public Text texto;
+    private int totalMoney;
+    public int currentBet = 0;
+    
+    public GameObject redButton;
+    public GameObject greenButton;
+    public GameObject whiteButton;
+
 
 
     void Start()
@@ -70,16 +75,23 @@ public class betNumber : MonoBehaviour {
             other.gameObject.tag = "RedChip";
         }
     }
-
-	
-	public void PlaceBet(int betAmount)
+    
+    
+    public void PlaceBet(int betAmount)
 	{
 		if (totalMoney >= betAmount)
 		{
 			totalMoney -= betAmount;
 			currentBet += betAmount;
 			UpdateUI();
-			}
+
+            if (totalMoney == 0)
+            {
+                redButton.SetActive(false);
+                greenButton.SetActive(false);
+                whiteButton.SetActive(false);
+            }
+		}
 	}
 
 	private void UpdateUI()
