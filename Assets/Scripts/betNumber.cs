@@ -3,19 +3,11 @@ using UnityEngine.UI;
 
 public class betNumber : MonoBehaviour {
 
-    public Text texto;
-
-    public Text totalMoneyText;
-    public Text currentBetText;
-
-    private int totalMoney;
-    public int currentBet = 0;
+    private Wallet refWallet;
 
     void Start()
 	{
-        string moneyText = totalMoneyText.text;
-        int.TryParse(moneyText, out totalMoney);
-        currentBetText.text = currentBet.ToString();
+        this.refWallet = GameObject.Find("AllMoney").GetComponent<Wallet>();
 	}
 
     void OnTriggerEnter(Collider other){
@@ -23,71 +15,32 @@ public class betNumber : MonoBehaviour {
         Vector3 objectPosition = transform.position;
 
         if (other.CompareTag("WhiteChip")){
-            texto.gameObject.SetActive(true);
-            texto.text = "Apostado";
-            other.gameObject.tag = "WhiteBet";
-            currentBet = currentBet + 1;
-            totalMoney = totalMoney - 1;
-            totalMoneyText.text = totalMoney.ToString();
-            currentBetText.text = currentBet.ToString();
-            
+            this.refWallet.apostar(1);
             other.transform.position = objectPosition;
         }
 
         if (other.CompareTag("RedChip")){
-            texto.gameObject.SetActive(true);
-            texto.text = "Apostado";
-            other.gameObject.tag = "RedBet";
-            currentBet = currentBet + 5;
-            totalMoney = totalMoney - 5;
-            totalMoneyText.text = totalMoney.ToString();
-            currentBetText.text = currentBet.ToString();
-
+            this.refWallet.apostar(5);
             other.transform.position = objectPosition;
         }
 
         if (other.CompareTag("GreenChip")){
-            texto.gameObject.SetActive(true);
-            texto.text = "Apostado";
-            other.gameObject.tag = "GreenBet";
-            currentBet = currentBet + 10;
-            totalMoney = totalMoney - 10;
-            totalMoneyText.text = totalMoney.ToString();
-            currentBetText.text = currentBet.ToString();
-
+            this.refWallet.apostar(10);
             other.transform.position = objectPosition;
         }
     }
 
     void OnTriggerExit(Collider other){
-        if (other.CompareTag("WhiteBet")){
-            texto.gameObject.SetActive(true);
-            texto.text = "NO Apostado";
-            currentBet = currentBet - 1;
-            totalMoney = totalMoney + 1;
-            totalMoneyText.text = totalMoney.ToString();
-            currentBetText.text = currentBet.ToString();
-            other.gameObject.tag = "WhiteChip";
+        if (other.CompareTag("WhiteChip")){
+            this.refWallet.unapostar(1);
         }
 
-        if (other.CompareTag("RedBet")){
-            texto.gameObject.SetActive(true);
-            texto.text = "NO Apostado";
-            currentBet = currentBet - 5;
-            totalMoney = totalMoney + 5;
-            totalMoneyText.text = totalMoney.ToString();
-            currentBetText.text = currentBet.ToString();
-            other.gameObject.tag = "RedChip";
+        if (other.CompareTag("RedChip")){
+            this.refWallet.unapostar(5);
         }
 
-        if (other.CompareTag("GreenBet")){
-            texto.gameObject.SetActive(true);
-            texto.text = "NO Apostado";
-            currentBet = currentBet - 10;
-            totalMoney = totalMoney + 10;
-            totalMoneyText.text = totalMoney.ToString();
-            currentBetText.text = currentBet.ToString();
-            other.gameObject.tag = "GreenChip";
+        if (other.CompareTag("GreenChip")){
+            this.refWallet.unapostar(10);
         }    
     }
 }
