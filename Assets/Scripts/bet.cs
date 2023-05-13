@@ -3,15 +3,18 @@
 
 public class bet : MonoBehaviour
 {
-	public RotateAround rotar;
+	private RotateAround refRotateAround;
     GameObject[] objectsToDestroywhite;
     GameObject[] objectsToDestroygreen;
     GameObject[] objectsToDestroyred;
     public betNumber betNumberScript;
 
+	void Start() {
+		refRotateAround = GameObject.Find ("RotatorRoullete").GetComponent<RotateAround> ();
+	}
+
     void Update()
 	{
-		
 		objectsToDestroywhite = GameObject.FindGameObjectsWithTag("WhiteBet");
         objectsToDestroyred = GameObject.FindGameObjectsWithTag("RedBet");
         objectsToDestroygreen = GameObject.FindGameObjectsWithTag("GreenBet");
@@ -38,7 +41,7 @@ public class bet : MonoBehaviour
         betNumberScript.texto.text = "No Apostado";
     }
 
-	public void OnClick() {
-		rotar.shouldRotate = true;
+	public void OnTriggerEnter(Collider other) {
+		refRotateAround.shouldRotate = true;
 	}
 }
