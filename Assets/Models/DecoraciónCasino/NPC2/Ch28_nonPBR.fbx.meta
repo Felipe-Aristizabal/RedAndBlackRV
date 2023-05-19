@@ -1,0 +1,401 @@
+fileFormatVersion: 2
+guid: 6cc2bcf34282bfa469d19e1bd8b3a64d
+timeCreated: 1684468480
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Ch28_Body
+    100002: Ch28_Eyelashes
+    100004: Ch28_Hair
+    100006: Ch28_Hoody
+    100008: //RootNode
+    100010: Ch28_Pants
+    100012: Ch28_Sneakers
+    100014: mixamorig10:Head
+    100016: mixamorig10:HeadTop_End
+    100018: mixamorig10:Hips
+    100020: mixamorig10:LeftArm
+    100022: mixamorig10:LeftFoot
+    100024: mixamorig10:LeftForeArm
+    100026: mixamorig10:LeftHand
+    100028: mixamorig10:LeftHandIndex1
+    100030: mixamorig10:LeftHandIndex2
+    100032: mixamorig10:LeftHandIndex3
+    100034: mixamorig10:LeftHandIndex4
+    100036: mixamorig10:LeftHandMiddle1
+    100038: mixamorig10:LeftHandMiddle2
+    100040: mixamorig10:LeftHandMiddle3
+    100042: mixamorig10:LeftHandMiddle4
+    100044: mixamorig10:LeftHandPinky1
+    100046: mixamorig10:LeftHandPinky2
+    100048: mixamorig10:LeftHandPinky3
+    100050: mixamorig10:LeftHandPinky4
+    100052: mixamorig10:LeftHandRing1
+    100054: mixamorig10:LeftHandRing2
+    100056: mixamorig10:LeftHandRing3
+    100058: mixamorig10:LeftHandRing4
+    100060: mixamorig10:LeftHandThumb1
+    100062: mixamorig10:LeftHandThumb2
+    100064: mixamorig10:LeftHandThumb3
+    100066: mixamorig10:LeftHandThumb4
+    100068: mixamorig10:LeftLeg
+    100070: mixamorig10:LeftShoulder
+    100072: mixamorig10:LeftToe_End
+    100074: mixamorig10:LeftToeBase
+    100076: mixamorig10:LeftUpLeg
+    100078: mixamorig10:Neck
+    100080: mixamorig10:RightArm
+    100082: mixamorig10:RightFoot
+    100084: mixamorig10:RightForeArm
+    100086: mixamorig10:RightHand
+    100088: mixamorig10:RightHandIndex1
+    100090: mixamorig10:RightHandIndex2
+    100092: mixamorig10:RightHandIndex3
+    100094: mixamorig10:RightHandIndex4
+    100096: mixamorig10:RightHandMiddle1
+    100098: mixamorig10:RightHandMiddle2
+    100100: mixamorig10:RightHandMiddle3
+    100102: mixamorig10:RightHandMiddle4
+    100104: mixamorig10:RightHandPinky1
+    100106: mixamorig10:RightHandPinky2
+    100108: mixamorig10:RightHandPinky3
+    100110: mixamorig10:RightHandPinky4
+    100112: mixamorig10:RightHandRing1
+    100114: mixamorig10:RightHandRing2
+    100116: mixamorig10:RightHandRing3
+    100118: mixamorig10:RightHandRing4
+    100120: mixamorig10:RightHandThumb1
+    100122: mixamorig10:RightHandThumb2
+    100124: mixamorig10:RightHandThumb3
+    100126: mixamorig10:RightHandThumb4
+    100128: mixamorig10:RightLeg
+    100130: mixamorig10:RightShoulder
+    100132: mixamorig10:RightToe_End
+    100134: mixamorig10:RightToeBase
+    100136: mixamorig10:RightUpLeg
+    100138: mixamorig10:Spine
+    100140: mixamorig10:Spine1
+    100142: mixamorig10:Spine2
+    400000: Ch28_Body
+    400002: Ch28_Eyelashes
+    400004: Ch28_Hair
+    400006: Ch28_Hoody
+    400008: //RootNode
+    400010: Ch28_Pants
+    400012: Ch28_Sneakers
+    400014: mixamorig10:Head
+    400016: mixamorig10:HeadTop_End
+    400018: mixamorig10:Hips
+    400020: mixamorig10:LeftArm
+    400022: mixamorig10:LeftFoot
+    400024: mixamorig10:LeftForeArm
+    400026: mixamorig10:LeftHand
+    400028: mixamorig10:LeftHandIndex1
+    400030: mixamorig10:LeftHandIndex2
+    400032: mixamorig10:LeftHandIndex3
+    400034: mixamorig10:LeftHandIndex4
+    400036: mixamorig10:LeftHandMiddle1
+    400038: mixamorig10:LeftHandMiddle2
+    400040: mixamorig10:LeftHandMiddle3
+    400042: mixamorig10:LeftHandMiddle4
+    400044: mixamorig10:LeftHandPinky1
+    400046: mixamorig10:LeftHandPinky2
+    400048: mixamorig10:LeftHandPinky3
+    400050: mixamorig10:LeftHandPinky4
+    400052: mixamorig10:LeftHandRing1
+    400054: mixamorig10:LeftHandRing2
+    400056: mixamorig10:LeftHandRing3
+    400058: mixamorig10:LeftHandRing4
+    400060: mixamorig10:LeftHandThumb1
+    400062: mixamorig10:LeftHandThumb2
+    400064: mixamorig10:LeftHandThumb3
+    400066: mixamorig10:LeftHandThumb4
+    400068: mixamorig10:LeftLeg
+    400070: mixamorig10:LeftShoulder
+    400072: mixamorig10:LeftToe_End
+    400074: mixamorig10:LeftToeBase
+    400076: mixamorig10:LeftUpLeg
+    400078: mixamorig10:Neck
+    400080: mixamorig10:RightArm
+    400082: mixamorig10:RightFoot
+    400084: mixamorig10:RightForeArm
+    400086: mixamorig10:RightHand
+    400088: mixamorig10:RightHandIndex1
+    400090: mixamorig10:RightHandIndex2
+    400092: mixamorig10:RightHandIndex3
+    400094: mixamorig10:RightHandIndex4
+    400096: mixamorig10:RightHandMiddle1
+    400098: mixamorig10:RightHandMiddle2
+    400100: mixamorig10:RightHandMiddle3
+    400102: mixamorig10:RightHandMiddle4
+    400104: mixamorig10:RightHandPinky1
+    400106: mixamorig10:RightHandPinky2
+    400108: mixamorig10:RightHandPinky3
+    400110: mixamorig10:RightHandPinky4
+    400112: mixamorig10:RightHandRing1
+    400114: mixamorig10:RightHandRing2
+    400116: mixamorig10:RightHandRing3
+    400118: mixamorig10:RightHandRing4
+    400120: mixamorig10:RightHandThumb1
+    400122: mixamorig10:RightHandThumb2
+    400124: mixamorig10:RightHandThumb3
+    400126: mixamorig10:RightHandThumb4
+    400128: mixamorig10:RightLeg
+    400130: mixamorig10:RightShoulder
+    400132: mixamorig10:RightToe_End
+    400134: mixamorig10:RightToeBase
+    400136: mixamorig10:RightUpLeg
+    400138: mixamorig10:Spine
+    400140: mixamorig10:Spine1
+    400142: mixamorig10:Spine2
+    4300000: Ch28_Body
+    4300002: Ch28_Sneakers
+    4300004: Ch28_Pants
+    4300006: Ch28_Hoody
+    4300008: Ch28_Eyelashes
+    4300010: Ch28_Hair
+    7400000: mixamo
+    9500000: //RootNode
+    13700000: Ch28_Body
+    13700002: Ch28_Eyelashes
+    13700004: Ch28_Hair
+    13700006: Ch28_Hoody
+    13700008: Ch28_Pants
+    13700010: Ch28_Sneakers
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: mixamo
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Ch28_Body
+        weight: 1
+      - path: Ch28_Eyelashes
+        weight: 1
+      - path: Ch28_Hair
+        weight: 1
+      - path: Ch28_Hoody
+        weight: 1
+      - path: Ch28_Pants
+        weight: 1
+      - path: Ch28_Sneakers
+        weight: 1
+      - path: mixamorig10:Hips
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:LeftUpLeg
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:LeftUpLeg/mixamorig10:LeftLeg
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:LeftUpLeg/mixamorig10:LeftLeg/mixamorig10:LeftFoot
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:LeftUpLeg/mixamorig10:LeftLeg/mixamorig10:LeftFoot/mixamorig10:LeftToeBase
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:LeftUpLeg/mixamorig10:LeftLeg/mixamorig10:LeftFoot/mixamorig10:LeftToeBase/mixamorig10:LeftToe_End
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:RightUpLeg
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:RightUpLeg/mixamorig10:RightLeg
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:RightUpLeg/mixamorig10:RightLeg/mixamorig10:RightFoot
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:RightUpLeg/mixamorig10:RightLeg/mixamorig10:RightFoot/mixamorig10:RightToeBase
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:RightUpLeg/mixamorig10:RightLeg/mixamorig10:RightFoot/mixamorig10:RightToeBase/mixamorig10:RightToe_End
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm/mixamorig10:LeftHand
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm/mixamorig10:LeftHand/mixamorig10:LeftHandIndex1
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm/mixamorig10:LeftHand/mixamorig10:LeftHandIndex1/mixamorig10:LeftHandIndex2
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm/mixamorig10:LeftHand/mixamorig10:LeftHandIndex1/mixamorig10:LeftHandIndex2/mixamorig10:LeftHandIndex3
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm/mixamorig10:LeftHand/mixamorig10:LeftHandIndex1/mixamorig10:LeftHandIndex2/mixamorig10:LeftHandIndex3/mixamorig10:LeftHandIndex4
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm/mixamorig10:LeftHand/mixamorig10:LeftHandMiddle1
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm/mixamorig10:LeftHand/mixamorig10:LeftHandMiddle1/mixamorig10:LeftHandMiddle2
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm/mixamorig10:LeftHand/mixamorig10:LeftHandMiddle1/mixamorig10:LeftHandMiddle2/mixamorig10:LeftHandMiddle3
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm/mixamorig10:LeftHand/mixamorig10:LeftHandMiddle1/mixamorig10:LeftHandMiddle2/mixamorig10:LeftHandMiddle3/mixamorig10:LeftHandMiddle4
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm/mixamorig10:LeftHand/mixamorig10:LeftHandPinky1
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm/mixamorig10:LeftHand/mixamorig10:LeftHandPinky1/mixamorig10:LeftHandPinky2
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm/mixamorig10:LeftHand/mixamorig10:LeftHandPinky1/mixamorig10:LeftHandPinky2/mixamorig10:LeftHandPinky3
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm/mixamorig10:LeftHand/mixamorig10:LeftHandPinky1/mixamorig10:LeftHandPinky2/mixamorig10:LeftHandPinky3/mixamorig10:LeftHandPinky4
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm/mixamorig10:LeftHand/mixamorig10:LeftHandRing1
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm/mixamorig10:LeftHand/mixamorig10:LeftHandRing1/mixamorig10:LeftHandRing2
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm/mixamorig10:LeftHand/mixamorig10:LeftHandRing1/mixamorig10:LeftHandRing2/mixamorig10:LeftHandRing3
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm/mixamorig10:LeftHand/mixamorig10:LeftHandRing1/mixamorig10:LeftHandRing2/mixamorig10:LeftHandRing3/mixamorig10:LeftHandRing4
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm/mixamorig10:LeftHand/mixamorig10:LeftHandThumb1
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm/mixamorig10:LeftHand/mixamorig10:LeftHandThumb1/mixamorig10:LeftHandThumb2
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm/mixamorig10:LeftHand/mixamorig10:LeftHandThumb1/mixamorig10:LeftHandThumb2/mixamorig10:LeftHandThumb3
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:LeftShoulder/mixamorig10:LeftArm/mixamorig10:LeftForeArm/mixamorig10:LeftHand/mixamorig10:LeftHandThumb1/mixamorig10:LeftHandThumb2/mixamorig10:LeftHandThumb3/mixamorig10:LeftHandThumb4
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:Neck
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:Neck/mixamorig10:Head
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:Neck/mixamorig10:Head/mixamorig10:HeadTop_End
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm/mixamorig10:RightHand
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm/mixamorig10:RightHand/mixamorig10:RightHandIndex1
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm/mixamorig10:RightHand/mixamorig10:RightHandIndex1/mixamorig10:RightHandIndex2
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm/mixamorig10:RightHand/mixamorig10:RightHandIndex1/mixamorig10:RightHandIndex2/mixamorig10:RightHandIndex3
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm/mixamorig10:RightHand/mixamorig10:RightHandIndex1/mixamorig10:RightHandIndex2/mixamorig10:RightHandIndex3/mixamorig10:RightHandIndex4
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm/mixamorig10:RightHand/mixamorig10:RightHandMiddle1
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm/mixamorig10:RightHand/mixamorig10:RightHandMiddle1/mixamorig10:RightHandMiddle2
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm/mixamorig10:RightHand/mixamorig10:RightHandMiddle1/mixamorig10:RightHandMiddle2/mixamorig10:RightHandMiddle3
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm/mixamorig10:RightHand/mixamorig10:RightHandMiddle1/mixamorig10:RightHandMiddle2/mixamorig10:RightHandMiddle3/mixamorig10:RightHandMiddle4
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm/mixamorig10:RightHand/mixamorig10:RightHandPinky1
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm/mixamorig10:RightHand/mixamorig10:RightHandPinky1/mixamorig10:RightHandPinky2
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm/mixamorig10:RightHand/mixamorig10:RightHandPinky1/mixamorig10:RightHandPinky2/mixamorig10:RightHandPinky3
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm/mixamorig10:RightHand/mixamorig10:RightHandPinky1/mixamorig10:RightHandPinky2/mixamorig10:RightHandPinky3/mixamorig10:RightHandPinky4
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm/mixamorig10:RightHand/mixamorig10:RightHandRing1
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm/mixamorig10:RightHand/mixamorig10:RightHandRing1/mixamorig10:RightHandRing2
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm/mixamorig10:RightHand/mixamorig10:RightHandRing1/mixamorig10:RightHandRing2/mixamorig10:RightHandRing3
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm/mixamorig10:RightHand/mixamorig10:RightHandRing1/mixamorig10:RightHandRing2/mixamorig10:RightHandRing3/mixamorig10:RightHandRing4
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm/mixamorig10:RightHand/mixamorig10:RightHandThumb1
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm/mixamorig10:RightHand/mixamorig10:RightHandThumb1/mixamorig10:RightHandThumb2
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm/mixamorig10:RightHand/mixamorig10:RightHandThumb1/mixamorig10:RightHandThumb2/mixamorig10:RightHandThumb3
+        weight: 1
+      - path: mixamorig10:Hips/mixamorig10:Spine/mixamorig10:Spine1/mixamorig10:Spine2/mixamorig10:RightShoulder/mixamorig10:RightArm/mixamorig10:RightForeArm/mixamorig10:RightHand/mixamorig10:RightHandThumb1/mixamorig10:RightHandThumb2/mixamorig10:RightHandThumb3/mixamorig10:RightHandThumb4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: mixamorig10:Hips
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
