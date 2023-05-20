@@ -7,38 +7,40 @@ public class bet : MonoBehaviour
     GameObject[] objectsToDestroywhite;
     GameObject[] objectsToDestroygreen;
     GameObject[] objectsToDestroyred;
-    public betNumber betNumberScript;
 
 	void Start() {
 		refRotateAround = GameObject.Find ("RotatorRoullete").GetComponent<RotateAround> ();
 	}
-
-    void Update()
-	{
-		objectsToDestroywhite = GameObject.FindGameObjectsWithTag("WhiteBet");
-        objectsToDestroyred = GameObject.FindGameObjectsWithTag("RedBet");
-        objectsToDestroygreen = GameObject.FindGameObjectsWithTag("GreenBet");
+		
+    void Update(){
+        objectsToDestroywhite = GameObject.FindGameObjectsWithTag("WhiteChip");
+        objectsToDestroyred = GameObject.FindGameObjectsWithTag("RedChip");
+        objectsToDestroygreen = GameObject.FindGameObjectsWithTag("GreenChip");
     }
 
     void OnCollisionEnter(Collision col)
     {
-        foreach (GameObject objectToDestroyW in objectsToDestroywhite)
-        {
-            Destroy(objectToDestroyW);
+        if (objectsToDestroywhite != null) {
+            foreach (GameObject objectToDestroyW in objectsToDestroywhite)
+            {
+                Destroy(objectToDestroyW);
+            }
         }
-        betNumberScript.texto.text = "No Apostado";
 
-         foreach (GameObject objectToDestroyG in objectsToDestroygreen)
-        {
-            Destroy(objectToDestroyG);
+        if (objectsToDestroygreen != null) {
+            foreach (GameObject objectToDestroyG in objectsToDestroygreen)
+            {
+                Destroy(objectToDestroyG);
+            }
         }
-        betNumberScript.texto.text = "No Apostado";
 
-         foreach (GameObject objectToDestroyR in objectsToDestroyred)
-        {
-            Destroy(objectToDestroyR);
+
+        if (objectsToDestroyred != null) {
+            foreach (GameObject objectToDestroyR in objectsToDestroyred)
+            {
+                Destroy(objectToDestroyR);
+            }
         }
-        betNumberScript.texto.text = "No Apostado";
     }
 
 	public void OnTriggerEnter(Collider other) {
