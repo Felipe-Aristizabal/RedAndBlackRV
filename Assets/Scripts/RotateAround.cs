@@ -3,8 +3,8 @@ using System.Collections;
 
 public class RotateAround : MonoBehaviour {
 
-	public float speed = 60f;
-	public float decreaseRate = 4f;
+	public float speed = 160f;
+	public float decreaseRate = 10f;
 	public bool shouldRotate = false;
 	private float timer = 0f;
 
