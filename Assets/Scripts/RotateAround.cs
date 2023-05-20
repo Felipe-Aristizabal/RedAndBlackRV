@@ -32,9 +32,9 @@ public class RotateAround : MonoBehaviour {
 				this.stop = true;
 			} else {
 				if (this.speed <= 0) {
-					this.stop = false;
-					this.speed = 160f;
-					this.timer = 0.0f;
+					// this.stop = false;
+					// this.speed = 160f;
+					// this.timer = 0.0f;
 				}
 			}
 		}
