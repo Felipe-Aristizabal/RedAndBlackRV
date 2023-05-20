@@ -1,11 +1,17 @@
 ﻿using UnityEngine;
 
+
 public class bet : MonoBehaviour
 {
+	private RotateAround refRotateAround;
     GameObject[] objectsToDestroywhite;
     GameObject[] objectsToDestroygreen;
     GameObject[] objectsToDestroyred;
 
+	void Start() {
+		refRotateAround = GameObject.Find ("RotatorRoullete").GetComponent<RotateAround> ();
+	}
+		
     void Update(){
         objectsToDestroywhite = GameObject.FindGameObjectsWithTag("WhiteChip");
         objectsToDestroyred = GameObject.FindGameObjectsWithTag("RedChip");
@@ -36,4 +42,8 @@ public class bet : MonoBehaviour
             }
         }
     }
+
+	public void OnTriggerEnter(Collider other) {
+		refRotateAround.shouldRotate = true;
+	}
 }
