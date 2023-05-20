@@ -5,8 +5,9 @@ public class RotateAround : MonoBehaviour {
 
 	public float speed = 160f;
 	public float decreaseRate = 10f;
-	public bool shouldRotate = false;
+	public bool stop = false;
 	private float timer = 0f;
+
 
 
 	void Start() {
@@ -17,7 +18,7 @@ public class RotateAround : MonoBehaviour {
 	 public void Update() 
 	{
 		timer += Time.deltaTime;
-		if (shouldRotate && speed > 0 && timer>=10f)
+		if (stop && speed > 0 && timer>=10f)
 		{
 			speed -= decreaseRate * Time.deltaTime;
 		}
@@ -27,7 +28,16 @@ public class RotateAround : MonoBehaviour {
 		if (timer >= 10f)
 		{
 			Debug.Log("Han pasado 10 segundos :) ");
-
+			if (!this.stop) {
+				this.stop = true;
+			} else {
+				if (this.speed <= 0) {
+					this.stop = false;
+					this.speed = 160f;
+					this.timer = 0.0f;
+				}
+			}
 		}
 	}
+
 }
