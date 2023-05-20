@@ -44,6 +44,6 @@ public class bet : MonoBehaviour
     }
 
 	public void OnTriggerEnter(Collider other) {
-		refRotateAround.shouldRotate = true;
+		refRotateAround.stop = true;
 	}
 }
