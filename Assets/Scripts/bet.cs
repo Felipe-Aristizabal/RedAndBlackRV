@@ -16,6 +16,7 @@ public class bet : MonoBehaviour
         objectsToDestroywhite = GameObject.FindGameObjectsWithTag("WhiteChip");
         objectsToDestroyred = GameObject.FindGameObjectsWithTag("RedChip");
         objectsToDestroygreen = GameObject.FindGameObjectsWithTag("GreenChip");
+
     }
 
     void OnCollisionEnter(Collision col)
