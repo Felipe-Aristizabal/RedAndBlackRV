@@ -18,23 +18,25 @@ public class RotateAround : MonoBehaviour {
 	 public void Update() 
 	{
 		timer += Time.deltaTime;
-		if (stop && speed > 0 && timer>=10f)
+		if (!stop && speed > 0 && timer>=3f)
 		{
 			speed -= decreaseRate * Time.deltaTime;
 		}
-		transform.RotateAround(transform.position, Vector2.down, speed * Time.deltaTime);
+		if(!stop && speed >0){
+			transform.RotateAround(transform.position, Vector2.down, speed * Time.deltaTime);
+		}
 
 
-		if (timer >= 10f)
+		if (timer >= 20f)
 		{
 			Debug.Log("Han pasado 10 segundos :) ");
 			if (!this.stop) {
 				this.stop = true;
 			} else {
 				if (this.speed <= 0) {
-					this.stop = false;
-					this.speed = 160f;
-					this.timer = 0.0f;
+					 this.stop = false;
+					 this.speed = 160f;
+					 this.timer = 0.0f;
 				}
 			}
 		}
