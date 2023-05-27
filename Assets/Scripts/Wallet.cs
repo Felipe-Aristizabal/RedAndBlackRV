@@ -6,9 +6,6 @@ public class Wallet : MonoBehaviour {
 
     public Text totalMoneyText;
     public Text currentBetText;
-	public Text texto;
-	
-	
 	public Text lastBet;
 
     public int totalMoney;
@@ -16,53 +13,91 @@ public class Wallet : MonoBehaviour {
 
 	public string lastReportedSensor = "";
 	public int captureBet; 
-	private RotateAround refRotateAround;
-	// Use this for initialization
+	public RotateAround refRotateAround;
+	public int totalMoneyBet =0;
+	public bool isBet = false;
+	public bool rouletteStop = false;
+	public string spotBet = "";
+
+
+	public bool prueba = false;
+
+	
+	public string colorBetRoullete = "";
+	public int numberBetRoullete = -1;
+	public string colorBetTable = "";
+	public int numberBetTable = -1;
+
 	void Start () {
 	    string moneyText = totalMoneyText.text;
         int.TryParse(moneyText, out totalMoney);
         currentBetText.text = currentBet.ToString();
 		lastBet.text = "No ha caído nada";
-		
+		refRotateAround = GameObject.Find("RotatorRoullete").GetComponent<RotateAround>();
 	}
 
 	void Update () {
-		lastBet.text = lastReportedSensor;  
-		//roulleteSpeed = refRotateAround.speed;
+		lastBet.text = validateNumberBet(lastReportedSensor).ToString();  
+		
+
+		if (isBet == true && rouletteStop == true && lastReportedSensor != "" && spotBet != "" && currentBet != 0 && prueba == true){
+			Debug.Log("Lugar mesa"+spotBet);
+			Debug.Log("Reportado: "+ lastReportedSensor);
+			Debug.Log("Apuesta: " + currentBet);
+			if (spotBet == "Bet Red" || spotBet == "Bet Black"){
+				colorBetTable = validateStringBet(spotBet);
+			}
+			colorBetRoullete = validateStringBet(lastReportedSensor);
+			numberBetRoullete = validateNumberBet(lastReportedSensor);
+			numberBetTable =  validateNumberBet(spotBet);
+
+			if (colorBetRoullete == colorBetTable){
+				Debug.Log("HAS GANADO");
+				int priceBet = currentBet;
+				currentBet = 0;
+				currentBetText.text = currentBet.ToString();
+				priceBet = priceBet * 2;
+				int winBet = totalMoney + priceBet;
+				totalMoneyText.text = winBet.ToString();
+			} else {
+				Debug.Log("NADA DE NADA");
+				currentBet = 0;
+				currentBetText.text = currentBet.ToString();
+			}
+		}
     }
 	
-
-	public void apostar(int ficha) {
+	public void apostarEnPantalla(int ficha) {
 		currentBet = currentBet + ficha;
 		totalMoney = totalMoney - ficha;
 		totalMoneyText.text = totalMoney.ToString();
 		currentBetText.text = currentBet.ToString();
-		texto.gameObject.SetActive(true);
-        texto.text = "Apostado";
-		refRotateAround = GameObject.Find ("RotatorRoullete").GetComponent<RotateAround> ();
-		float roulleteSpeed;
-		while(true){
-			roulleteSpeed = refRotateAround.speed;
-			if(roulleteSpeed <=0 ){
-				Debug.Log("salio del ciclo");
-				break;
-			}
-		};
-		
-		
 	}
 
-	public void unapostar(int ficha) {
+	public void unapostarEnPantalla(int ficha) {
 		currentBet = currentBet - ficha;
 		totalMoney = totalMoney + ficha;
 		totalMoneyText.text = totalMoney.ToString();
 		currentBetText.text = currentBet.ToString();
-		texto.gameObject.SetActive(true);
-        texto.text = "No has apostado";
 	}
 
-	public int validateNumberBet(string captureBet){
-		switch (captureBet){
+	public void apostar(){
+		Debug.Log("Presione el boton apostar");
+		
+		// roulleteRun = this.refRotateAround.stop;
+		// while(roulleteRun == false){
+		// 	Debug.Log("Entré al while");
+			
+		// 	roulleteRun = this.refRotateAround.stop;
+		// 	if(roulleteRun){
+		// 		Debug.Log("salio del ciclo");
+		// 		break;
+		// 	}
+		// };
+	 } 
+
+	public int validateNumberBet(string lastReportedSensor){
+		switch (lastReportedSensor){
 			case "Bet Red":
 			return 40;
 			
