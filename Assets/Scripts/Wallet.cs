@@ -52,14 +52,33 @@ public class Wallet : MonoBehaviour {
 			numberBetTable =  validateNumberBet(spotBet);
 
 			if (colorBetRoullete == colorBetTable){
-				Debug.Log("HAS GANADO");
+				Debug.Log("HAS GANADO APUESTA COLOR");
 				int priceBet = currentBet;
 				currentBet = 0;
 				currentBetText.text = currentBet.ToString();
 				priceBet = priceBet * 2;
 				int winBet = totalMoney + priceBet;
 				totalMoneyText.text = winBet.ToString();
-			} else {
+			} if (numberBetRoullete == numberBetTable) {
+				if(numberBetRoullete == 0 || numberBetRoullete == 37){
+					Debug.Log("HAS GANADO APUESTA NÚMERO 0 o 00");
+					int priceBet00 = currentBet;
+					currentBet = 0;
+					currentBetText.text = currentBet.ToString();
+					priceBet00 = priceBet00 * 44;
+					int winBet00 = totalMoney + priceBet00;
+					totalMoneyText.text = winBet00.ToString();
+				} else {
+					Debug.Log("HAS GANADO APUESTA NÚMERO");
+					int priceBetColor = currentBet;
+					currentBet = 0;
+					currentBetText.text = currentBet.ToString();
+					priceBetColor = priceBetColor * 18;
+					int winBetColor = totalMoney + priceBetColor;
+					totalMoneyText.text = winBetColor.ToString();
+				}
+			} 
+			else {
 				Debug.Log("NADA DE NADA");
 				currentBet = 0;
 				currentBetText.text = currentBet.ToString();
