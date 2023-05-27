@@ -3,20 +3,25 @@
 
 public class bet : MonoBehaviour
 {
-	private RotateAround refRotateAround;
+    public bool activate = false;
+    private Wallet refWallet;
+    private spawnChips refSpawnChips;
     GameObject[] objectsToDestroywhite;
     GameObject[] objectsToDestroygreen;
     GameObject[] objectsToDestroyred;
 
 	void Start() {
-		refRotateAround = GameObject.Find ("RotatorRoullete").GetComponent<RotateAround> ();
+        refWallet = GameObject.Find("AllMoney").GetComponent<Wallet>();
+        refSpawnChips = GameObject.Find("Button Red").GetComponent<spawnChips>();
 	}
 		
     void Update(){
         objectsToDestroywhite = GameObject.FindGameObjectsWithTag("WhiteChip");
         objectsToDestroyred = GameObject.FindGameObjectsWithTag("RedChip");
         objectsToDestroygreen = GameObject.FindGameObjectsWithTag("GreenChip");
-
+        if (activate == true){
+            this.refWallet.isBet = true;
+        }
     }
 
     void OnCollisionEnter(Collision col)
@@ -42,9 +47,10 @@ public class bet : MonoBehaviour
                 Destroy(objectToDestroyR);
             }
         }
+        //Debug.Log(this.refWallet.totalMoneyBet);
+        this.refWallet.isBet = true;
+        this.refSpawnChips.hasGeneratedObject = false;
     }
-
-	public void OnTriggerEnter(Collider other) {
-		refRotateAround.stop = true;
-	}
 }
+
+

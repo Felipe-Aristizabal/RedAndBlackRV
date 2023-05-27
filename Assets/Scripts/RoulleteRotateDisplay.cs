@@ -19,8 +19,6 @@ namespace Components
 			gameRoullete.OnRotate
 				.Subscribe(OnRotateRoullete)
 				.AddTo(this);
-			
-
 		}
 
 		private void OnRotateRoullete(bool isRotate)
