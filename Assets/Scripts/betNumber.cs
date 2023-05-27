@@ -21,13 +21,13 @@ public class betNumber : MonoBehaviour {
         }
 
         if (other.CompareTag("RedChip")){
-            this.refWallet.apostarEnPantalla(2);
-            this.refWallet.totalMoneyBet += 2;
+            this.refWallet.apostarEnPantalla(5);
+            this.refWallet.totalMoneyBet += 5;
             other.transform.position = objectPosition;
         }
         if (other.CompareTag("GreenChip")){
-            this.refWallet.apostarEnPantalla(5);
-            this.refWallet.totalMoneyBet += 5;
+            this.refWallet.apostarEnPantalla(10);
+            this.refWallet.totalMoneyBet += 10;
             other.transform.position = objectPosition;  
         }
 
@@ -42,13 +42,13 @@ public class betNumber : MonoBehaviour {
         }
 
         if (other.CompareTag("RedChip")){
-            this.refWallet.unapostarEnPantalla(2);
-            this.refWallet.totalMoneyBet -= 2;
+            this.refWallet.unapostarEnPantalla(5);
+            this.refWallet.totalMoneyBet -= 5;
         }
 
         if (other.CompareTag("GreenChip")){
-            this.refWallet.unapostarEnPantalla(5);
-            this.refWallet.totalMoneyBet -= 5;
+            this.refWallet.unapostarEnPantalla(10);
+            this.refWallet.totalMoneyBet -= 10;
         }    
     }
 }

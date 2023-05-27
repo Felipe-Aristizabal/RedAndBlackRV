@@ -5,12 +5,14 @@ public class bet : MonoBehaviour
 {
     public bool activate = false;
     private Wallet refWallet;
+    private spawnChips refSpawnChips;
     GameObject[] objectsToDestroywhite;
     GameObject[] objectsToDestroygreen;
     GameObject[] objectsToDestroyred;
 
 	void Start() {
         refWallet = GameObject.Find("AllMoney").GetComponent<Wallet>();
+        refSpawnChips = GameObject.Find("Button Red").GetComponent<spawnChips>();
 	}
 		
     void Update(){
@@ -47,6 +49,7 @@ public class bet : MonoBehaviour
         }
         //Debug.Log(this.refWallet.totalMoneyBet);
         this.refWallet.isBet = true;
+        this.refSpawnChips.hasGeneratedObject = false;
     }
 }
 
