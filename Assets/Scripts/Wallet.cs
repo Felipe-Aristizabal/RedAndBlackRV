@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Wallet : MonoBehaviour {
 
+	public RotateAround refRotateAround;
     public Text totalMoneyText;
     public Text currentBetText;
 	public Text lastBet;
@@ -13,20 +15,17 @@ public class Wallet : MonoBehaviour {
 
 	public string lastReportedSensor = "";
 	public int captureBet; 
-	public RotateAround refRotateAround;
 	public int totalMoneyBet =0;
 	public bool isBet = false;
 	public bool rouletteStop = false;
 	public string spotBet = "";
 
-
-	public bool prueba = false;
-
-	
 	public string colorBetRoullete = "";
 	public int numberBetRoullete = -1;
 	public string colorBetTable = "";
 	public int numberBetTable = -1;
+
+	public string sceneName = "finalScene";
 
 	void Start () {
 	    string moneyText = totalMoneyText.text;
@@ -39,7 +38,6 @@ public class Wallet : MonoBehaviour {
 	void Update () {
 		lastBet.text = validateNumberBet(lastReportedSensor).ToString();  
 		
-
 		if (isBet == true && rouletteStop == true && lastReportedSensor != "" && spotBet != "" && currentBet != 0 ){
 			Debug.Log("Lugar mesa"+spotBet);
 			Debug.Log("Reportado: "+ lastReportedSensor);
@@ -59,6 +57,7 @@ public class Wallet : MonoBehaviour {
 				priceBet = priceBet * 2;
 				int winBet = totalMoney + priceBet;
 				totalMoneyText.text = winBet.ToString();
+				isBet = false;
 			} 
 			if (numberBetRoullete == numberBetTable) {
 				if(numberBetRoullete == 0 || numberBetRoullete == 37){
@@ -69,6 +68,7 @@ public class Wallet : MonoBehaviour {
 					priceBet00 = priceBet00 * 44;
 					int winBet00 = totalMoney + priceBet00;
 					totalMoneyText.text = winBet00.ToString();
+					isBet = false;
 				} else {
 					Debug.Log("HAS GANADO APUESTA NÚMERO");
 					int priceBetColor = currentBet;
@@ -77,6 +77,7 @@ public class Wallet : MonoBehaviour {
 					priceBetColor = priceBetColor * 18;
 					int winBetColor = totalMoney + priceBetColor;
 					totalMoneyText.text = winBetColor.ToString();
+					isBet = false;
 				}
 			}
 			if (numberBetTable == 38) {
@@ -88,6 +89,7 @@ public class Wallet : MonoBehaviour {
 					priceBetThird1 = priceBetThird1 * 3;
 					int winBetThird1 = totalMoney + priceBetThird1;
 					totalMoneyText.text = winBetThird1.ToString();
+					isBet = false;
 				} 
 			}
 			if (numberBetTable == 39) {
@@ -99,6 +101,7 @@ public class Wallet : MonoBehaviour {
 					priceBetThird2 = priceBetThird2 * 3;
 					int winBetThird2 = totalMoney + priceBetThird2;
 					totalMoneyText.text = winBetThird2.ToString();
+					isBet = false;
 				} 
 			}
 			if (numberBetTable == 40) {
@@ -110,12 +113,18 @@ public class Wallet : MonoBehaviour {
 					priceBetThird3 = priceBetThird3 * 3;
 					int winBetThird3 = totalMoney + priceBetThird3;
 					totalMoneyText.text = winBetThird3.ToString();
+					isBet = false;
 				} 
 			} else {
 				Debug.Log("NADA DE NADA");
 				currentBet = 0;
 				currentBetText.text = currentBet.ToString();
+				isBet = false;
 			}
+		}
+
+		if (currentBet == 0 && totalMoney == 0){
+			SceneManager.LoadScene(sceneName);
 		}
     }
 	
