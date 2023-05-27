@@ -49,3 +49,5 @@ public class bet : MonoBehaviour
         this.refWallet.isBet = true;
     }
 }
+
+
