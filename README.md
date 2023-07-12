@@ -1,7 +1,7 @@
 # RedAndBlackRV
 Red And Black RV uses Oculus DK2 and Leap Motion to simulate a casino roulette
 
-Abstract:
+## Project Description
 
 In this VR game, immerse yourself in the exciting story of a university student facing a risky decision. The protagonist decides to visit a casino to try his luck at roulette, seeking to win a large amount of money. However, the money he is betting belongs to his tuition fees. If he loses, he will be forced to drop out of his studies.
 
@@ -9,7 +9,7 @@ As you delve into this game, you will experience a combination of elements from 
 
 So, tell me, would you bet all your money on a single number and risk losing it all, or would you be more cautious and seek strategies to increase your chances of winning?
 
-Installs:
+## Installs
 
 To install the required dependencies, go to the following link
 
